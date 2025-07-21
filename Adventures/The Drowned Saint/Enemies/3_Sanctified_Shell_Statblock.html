@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanctified Shell - Statblock</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      gap: 30px;
+      margin: 20px;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+    #markdown-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="column">
+    <h2>Markdown Statblock</h2>
+    <div id="markdown-content"></div>
+  </div>
+  <div class="column">
+    <h2>Visual Reference</h2>
+    <img src="3 Sanctified_Shell.png" alt="Sanctified Shell">
+  </div>
+
+  <script>
+    const markdown = `
+# Sanctified Shell
+*Medium construct (armor), lawful neutral*
+
+**Armor Class** 18 (sanctified plate)  
+**Hit Points** 70 (8d8 + 32)  
+**Speed** 30 ft.
+
+| STR | DEX | CON | INT | WIS | CHA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 16 (+3) | 11 (+0) | 18 (+4) | 3 (-4) | 10 (+0) | 1 (-5) |
+
+**Damage Immunities** Radiant, Necrotic; Poison, Psychic  
+**Condition Immunities** Blinded, Charmed, Deafened, Frightened, Paralyzed, Petrified, Poisoned  
+**Senses** Blindsight 30 ft., Passive Perception 10  
+**Languages** —  
+**Challenge** 4 (1,100 XP)
+
+---
+
+### Actions
+
+***Soul Lock Slam.***  
+Melee Weapon Attack: +6 to hit, reach 5 ft., one target.  
+Hit: 2d8 + 4 bludgeoning damage plus 1d8 radiant damage.  
+On hit, the target must succeed on a DC 14 Constitution saving throw or be unable to regain hit points for 1 minute.
+
+---
+
+### Traits
+
+***Memory Trigger (Reaction).***  
+When a creature says "Elira," the Shell must make a DC 15 Wisdom saving throw or freeze for 1 round.
+
+***Bulwark of Silence (3/Day).***  
+Emits a 10-foot aura of silence for 1 minute. Creatures inside cannot cast spells with verbal components.
+
+---
+
+### 🛐 Out of Combat Behavior
+
+Sanctified Shells stand motionless in watchful patrol. They do not breathe or shift—they simply **wait** at posts established decades ago. Dust settles on their shoulders like snow.
+
+---
+
+### ⚠️ Triggers for Combat
+
+- A creature passes their invisible threshold without blessing  
+- Any mention of Elira that breaks protocol or sounds like blasphemy  
+- Touching an idol or relic within their guard radius
+
+---
+
+### 🎭 Motivation / Purpose
+
+Originally protectors of the relic, they have been repurposed to enforce silence and obedience. Their programming sees any questioning of faith or history as a heresy to be punished.
+
+---
+
+### 🧮 Number and Role
+
+- Usually found alone, or in pairs  
+- They are **gatekeepers** to vaults, crypts, and sacred machinery
+
+---
+
+### 📜 Read-Aloud: First Encounter
+
+> You almost miss the armored figure—until it moves.  
+>  
+> It doesn’t draw a blade or raise a hand. Instead, it steps to the center of the hall, lifts its gaze, and tilts its helm toward you as if **listening**.  
+>  
+> A runed sigil flashes across its chest, and then silence floods the room like water in a tomb.
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

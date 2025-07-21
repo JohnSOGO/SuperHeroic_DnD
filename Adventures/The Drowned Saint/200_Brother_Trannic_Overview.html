@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brother Trannic</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 40px;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #999;
+      padding-bottom: 0.3em;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="markdown-content">Loading...</div>
+
+  <script>
+    const markdown = `# Brother Trannic
+
+*“He was once the Bishop’s shadow. Now he keeps the candle lit for ghosts.”*
+
+---
+
+## 🧔 Who Is Brother Trannic?
+
+Brother Trannic is a surviving monk of the Kindled Mercy order. Once a scribe and loyal servant to Bishop Ennius Cauldran, he abandoned the clergy shortly after Elira’s death—tormented by guilt and secrecy.
+
+He now lives as a recluse, tending to forgotten graves and muttering prayers no one else remembers.
+
+---
+
+## 🔍 How the Players Find Him
+
+- Ask **Widow Marn** about “those who still believe”  
+- **Follow ghostly footprints** leading from the reliquary gate to the overgrown path  
+- Discover his **abandoned sermon journals** in the closed seminary archives
+- **Random encounter** while camping near the shrine of Lost Hours (he leaves candles)
+
+---
+
+## 🧠 What He Knows
+
+- The **true name** of the bishop: *Ennius Cauldran*  
+- That Elira was not “ascended” but **sacrificed alive**
+- The **location of the sealed ritual vault** beneath the cathedral
+- The **basic structure of the sealing ritual**, and that it requires:
+  - **Her symbol**
+  - **Her body**
+  - **Her final name spoken by another of the faith**
+
+---
+
+## ⚖️ How He Can Help
+
+- Perform the **first step** of the sealing ritual, invoking her name  
+- Offer the players **Elira’s preserved holy symbol**, hidden in his robe  
+- Lead them through **unmarked crypt paths** only he remembers
+- Provide cryptic but useful guidance during combat or haunting
+
+---
+
+## ⚠️ How He Can Hurt
+
+- If **convinced the players mock the faith**, he may try to stop the ritual  
+- If **possessed or corrupted**, he can lead the players into a false chamber  
+- He may **attempt to “complete the sacrifice”** himself if Elira’s soul is unstable—believing it must be finished to end her torment
+
+---
+
+## 🎭 Roleplaying Brother Trannic
+
+- Speaks in soft riddles and fractured hymns  
+- Calls Elira “the girl with no funeral” or “the flame they drowned”  
+- Nervous, apologetic, but increasingly lucid when truth is spoken
+
+---
+
+## 📜 Read-Aloud (First Encounter)
+
+> A man in faded robes kneels beside a headstone too worn to read. He hums a broken hymn, his fingers trembling with age and fear.  
+>  
+> He turns, startled. “You came,” he whispers, as if remembering a dream.  
+>  
+> “She waits. Beneath. But she’s not alone now.”  
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

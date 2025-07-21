@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Idol-Fused Horror - Statblock</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      gap: 30px;
+      margin: 20px;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+    #markdown-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="column">
+    <h2>Markdown Statblock</h2>
+    <div id="markdown-content"></div>
+  </div>
+  <div class="column">
+    <h2>Visual Reference</h2>
+    <img src="4 Idol_Fused_Horror.png" alt="Idol-Fused Horror">
+  </div>
+
+  <script>
+    const markdown = `# Idol-Fused Horror
+*Large aberration (idol-bound), chaotic evil*
+
+**Armor Class** 15  
+**Hit Points** 120 (16d10 + 32)  
+**Speed** 30 ft., fly 40 ft. (hover)
+
+| STR | DEX | CON | INT | WIS | CHA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 18 (+4) | 14 (+2) | 14 (+2) | 10 (+0) | 13 (+1) | 16 (+3) |
+
+**Damage Resistances** Radiant, Necrotic, Psychic  
+**Condition Immunities** Charmed, Exhaustion, Frightened, Turned  
+**Senses** Truesight 30 ft., Darkvision 60 ft., Passive Perception 13  
+**Languages** Abyssal, telepathy 60 ft.  
+**Challenge** 6 (2,300 XP)
+
+---
+
+### Traits
+
+***Soul Pulse (Recharge 4–6).***  
+Each creature in a 30-foot radius must succeed on a DC 15 Charisma saving throw or take 5d10 psychic damage, be pushed 10 feet, and lose concentration.
+
+***Harvest Scream (1/Day).***  
+All creatures within line of sight must make a DC 16 Wisdom saving throw or take 3d10 psychic damage and become frightened for 1 minute.
+
+***Tether of Regret.***  
+When the Idol-Fused Horror is damaged, the attacker must make a DC 13 Wisdom saving throw or take 2d8 psychic damage.
+
+---
+
+### 🛐 Out of Combat Behavior
+
+It pulses quietly in the darkness—its limbs merged into stone, flesh, and iconography. Whispering voices leak from its carved mouth and eye sockets, invoking heresies long forgotten.
+
+---
+
+### ⚠️ Triggers for Combat
+
+- Attempting to **seal or absorb** the relic  
+- Casting high-level radiant or necrotic magic nearby  
+- Speaking the bishop’s true name
+
+---
+
+### 🎭 Motivation / Purpose
+
+The Horror is a **failed sealing**, the physical fusion of soul and idol. It now exists to consume divine energy, **distort memory**, and punish those who try to end the cycle.
+
+---
+
+### 🧮 Number and Role
+
+- Only one exists  
+- It is the final guardian, hidden within the forge or reliquary
+
+---
+
+### 📜 Read-Aloud: First Encounter
+
+> The altar splits. Not with thunder, but with sorrow.  
+>  
+> From within the cracked stone, a creature unfolds—not summoned, but remembered into being.  
+>  
+> Its face is part idol, part bone, and part unknown. A chain of relics binds its spine like vertebrae.  
+>  
+> It opens its mouth to scream—but only memory pours out.
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

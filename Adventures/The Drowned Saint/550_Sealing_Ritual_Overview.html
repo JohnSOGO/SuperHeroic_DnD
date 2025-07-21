@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Sealing Ritual</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 40px;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #999;
+      padding-bottom: 0.3em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 6px;
+      text-align: center;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div id="markdown-content">Loading...</div>
+
+  <script>
+    const markdown = `# 🔏 The Sealing Ritual
+
+*“To silence the Idol, you must speak the name she could not.”*
+
+---
+
+## 🕯️ Purpose
+
+The ritual is meant to **cleanse and seal the Soul-Drinker Idol**, binding Elira’s fragmented soul and ending its spread of spiritual corruption.  
+It is dangerous, sacred, and requires **the united efforts of three participants**—each fulfilling a symbolic role.
+
+---
+
+## 📜 Requirements
+
+- **Elira’s Body or Ashes** (found in the submerged sanctum)  
+- **Elira’s Holy Symbol** (retrieved from Brother Trannic or reliquary)  
+- **Her True Name**, spoken in reverence (requires insight into her story)
+
+---
+
+## 🧙‍♀️ Roles
+
+Each player must take one role in the ritual:
+
+| Role | Action | Save Required |
+|------|--------|----------------|
+| 🔥 The Flamebearer | Holds and lifts the holy symbol during the invocation | DC 14 Constitution save (resist psychic backlash) |
+| 📖 The Confessor | Speaks Elira’s full name and reads her final rite | DC 15 Wisdom save (resist doubt and despair) |
+| 🕊 The Binder | Physically places the relic on the coffin or bones | DC 16 Charisma save (resist soul tethering)
+
+---
+
+## 🌀 The Ritual Flow
+
+### 🧭 Step 1: Circle of Light
+- The area must be cleansed with radiant or divine magic (any light-based spell suffices)
+- Enemies nearby will attempt to disrupt or mock the rite
+
+### 🎙 Step 2: Speak the Name
+- “Elira Vaust. Child of Mercy. Saint of the Drowned.”  
+- Must be spoken with belief. Falsehood breaks the flow.
+
+### 🔒 Step 3: Final Placement
+- The holy symbol is pressed against her bones or coffin  
+- The Binder must pass a **DC 16 Charisma saving throw** or be pulled into the Idol’s memory storm
+
+---
+
+## ⚠️ Failure Conditions
+
+- If **any 2 saves fail**, the sealing **collapses** and the Idol **awakened** fully  
+- If **all 3 fail**, Elira’s soul is shattered permanently, and the Idol becomes **uncontainable**
+- If **only 1 fails**, the ritual completes, but **one player is marked by Elira’s sorrow**
+
+---
+
+## ✨ Completion Effect
+
+If all succeed:
+- The Idol turns to ash, and Elira’s spirit appears  
+- She thanks the players before fading in peace  
+- Undead nearby collapse, and the cathedral lights briefly with divine warmth
+
+---
+
+## 🎭 Read-Aloud Flavor (During Ritual)
+
+> A shimmer moves through the air like heat. The symbol glows white-red.  
+>  
+> Elira’s name echoes across stone—spoken with reverence for the first time in decades.  
+>  
+> Something begins to scream… then weep… then nothing.  
+>  
+> A single bell chimes, though none are left hanging.
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

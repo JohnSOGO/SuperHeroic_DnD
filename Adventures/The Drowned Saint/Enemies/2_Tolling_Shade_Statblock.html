@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tolling Shade - Full Statblock</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      gap: 30px;
+      margin: 20px;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+    #markdown-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="column">
+    <h2>Markdown Statblock</h2>
+    <div id="markdown-content"></div>
+  </div>
+  <div class="column">
+    <h2>Visual Reference</h2>
+    <img src="2 Tolling_Shade.png" alt="Tolling Shade">
+  </div>
+
+  <script>
+    const markdown = `# Tolling Shade
+*Medium undead (spirit), neutral evil*
+
+**Armor Class** 13  
+**Hit Points** 60 (8d8 + 24)  
+**Speed** 0 ft., fly 40 ft. (hover)
+
+| STR | DEX | CON | INT | WIS | CHA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 6 (-2) | 14 (+2) | 16 (+3) | 11 (+0) | 14 (+2) | 17 (+3) |
+
+**Damage Resistances** Necrotic, Radiant; Bludgeoning, Piercing, and Slashing from nonmagical attacks  
+**Condition Immunities** Charmed, Exhaustion, Grappled, Paralyzed, Prone, Restrained  
+**Senses** Darkvision 60 ft., Passive Perception 12  
+**Languages** Understands all it knew in life  
+**Challenge** 3 (700 XP)
+
+---
+
+### Traits
+
+***Toll of Memory (Recharge 5–6).***  
+One creature must succeed on a DC 15 Wisdom saving throw or take 5d10 psychic damage and experience a hallucination of a lost loved one.
+
+***Mimic Voice (At Will).***  
+The shade can perfectly imitate any voice it has heard. DC 13 Insight check to recognize deception.
+
+***Soul Echo (Passive).***  
+When struck by radiant damage, it emits a 30-foot pulse healing all undead 5 HP.
+
+---
+
+### 🛐 Out of Combat Behavior
+
+Tolling Shades drift silently near:
+
+- **Choir lofts and bell towers**, resonating with broken hymns  
+- **Memorial halls** where Elira’s name was erased or denied  
+- **Submerged corridors** where she was carried and forgotten  
+
+They mimic **prayers in reverse**, pace as if in mourning, or reflect from still water before appearing.
+
+---
+
+### ⚠️ Triggers for Combat
+
+Tolling Shades attack when:
+
+- A PC **touches Elira’s reliquary** or sacred icon  
+- A **radiant spell** lights up the chamber  
+- A PC says “Elira” with **mockery or guilt**
+
+---
+
+### 🎭 Motivation / Purpose
+
+Tolling Shades are manifestations of **grief, silence, and denied mourning**.  
+They toll not for vengeance, but to **commemorate Elira**, whose death was erased from history.
+
+They seek to:
+- Mourn the saint who was never given a funeral  
+- Guard the truth of her death from being erased  
+- Haunt those who dishonor or forget her sacrifice
+
+> *“You did not weep for her. So we ring. So we echo.”*
+
+---
+
+### 🧮 Number and Role
+
+- **There are 2–4 Tolling Shades** in the cathedral  
+- They are **not a swarm**, but **resonant echoes**—each one a different aspect of Elira’s memory
+- They may appear in **sequence**, **together**, or even **non-hostile**—until provoked
+
+---
+
+### 📜 Read-Aloud: First Encounter
+
+> As you enter the crumbled choir loft, silence grows thick—until a faint ringing rolls through the air, as if an old bell tolled far beneath the sea.  
+>  
+> A pale shimmer appears above a cracked pew, coalescing into a veiled figure, half-woman, half-echo, her mouth moving in prayer… but no sound escapes—only the memory of sound.  
+>  
+> The temperature drops.  
+> Her face turns toward you, expression unreadable, and she begins to hum something only half-remembered.
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

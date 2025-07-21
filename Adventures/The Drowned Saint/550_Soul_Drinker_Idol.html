@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soul-Drinker Idol</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      display: flex;
+      gap: 40px;
+      margin: 40px;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+    #markdown-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 6px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="column" id="markdown-content">Loading...</div>
+  <div class="column">
+    <img src="550 Soul Drinker Idol.png" alt="Soul-Drinker Idol">
+  </div>
+
+  <script>
+    const markdown = `# 🕯 Soul-Drinker Idol
+
+*Wondrous item, artifact (requires attunement)*
+
+---
+
+## 🧩 Overview
+
+The Soul-Drinker Idol is a twisted relic of divine and necrotic energies—once a symbol of mercy, now defiled through betrayal, sacrifice, and spiritual rot.
+
+Forged from stone, bone, and enshrined sorrow, the Idol pulses faintly with the souls of those lost during the flooding of the cathedral—**most notably Elira herself**. It is both **a container of divine memory** and **a parasitic ward** that fuels its own defense.
+
+---
+
+## 🧠 Role in the Adventure
+
+- Anchors Elira’s fractured soul  
+- Must be **sealed** or **absorbed** to resolve the final act  
+- Interacts with the sealing ritual, resisting purification  
+- Reacts to key names spoken (Elira, Ennius Cauldran)  
+- Can be destroyed *only if properly sealed first*
+
+---
+
+## 🧬 Properties
+
+While attuned to the Idol (willingly or unwillingly), the bearer gains:
+
+- **+1 AC** and **resistance to necrotic damage**  
+- Can speak and understand **Celestial** and **Abyssal**  
+- Can cast *Speak with Dead* 1/day, but only hears **echoes of regret**  
+- When making death saves, rolls **2 dice and chooses one**
+
+---
+
+## 💀 Cursed Nature
+
+The Idol is cursed. Once attuned:
+
+- You **cannot unattune** unless *Remove Curse* or *Wish* is used  
+- Each dawn, roll a **DC 15 Wisdom saving throw**:
+  - **Fail:** Lose 1 hit die as a soul fragment is drained  
+  - **Succeed:** Feel Elira’s sorrow—but retain control  
+- When another soul dies within 30 ft., it is **pulled into the Idol** (unless protected by divine blessing)
+
+---
+
+## 🧊 Soul Capacity
+
+The Idol contains:
+- 🧬 **Elira Vaust** (primary soul, unstable)
+- ⚰️ **6–10 common souls** of townsfolk, pilgrims, and clergy
+- 💥 May release a **soul burst** if damaged: 3d8 necrotic + stunned for 1 round
+
+---
+
+## 🧨 Destruction
+
+- Cannot be destroyed by conventional means  
+- Must be:  
+  1. Sealed using Elira’s name  
+  2. Bathed in divine light  
+  3. Buried beneath **true stone of the cathedral**  
+- Upon destruction, all bound souls are released and pass on—except Elira, who speaks once before fading
+
+---
+
+## 📜 Read-Aloud Description (When Found)
+
+> The Idol is cold, but sweat beads on your palm.  
+>  
+> Bone-fused stone, coiled with warped metal and tangled scripture.  
+>  
+> Its surface writhes faintly. Not movement—*memory*.  
+>  
+> A face, half-formed, tries to look back.
+
+---
+
+## 🧭 Optional Use by Players
+
+| Use | Risk |
+|-----|------|
+| Absorb it (Aloquin) | May gain divine insight—or be permanently haunted |
+| Carry it during ritual | May boost ritual DCs by +2 |
+| Attempt to destroy it prematurely | Triggers soul burst, haunting, or backlash |
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vellbridge - Town Overview</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 40px;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #999;
+      padding-bottom: 0.3em;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="markdown-content">Loading...</div>
+
+  <script>
+    const markdown = `# Vellbridge
+
+*“Where the flood forgot, but the stones remember.”*
+
+---
+
+## 🌁 Overview
+
+Vellbridge is a mist-wrapped riverside town built at the edge of a long-drowned valley, just north of the shattered cathedral ruins. Once a thriving pilgrimage site known for its saintly relics and miracle springs, Vellbridge now clings to a hushed existence, layered in secrecy, superstition, and half-buried guilt.
+
+---
+
+## 🏙️ General Features
+
+- **Population:** ~700  
+- **Climate:** Cool, humid, shrouded in frequent fog  
+- **Known For:** Saltwater-choked ruins, whispered saints, a dried holy spring, long processions of black-robed clergy  
+- **Architecture:** Gothic stonework mixed with flood-damaged wooden expansions, much of it moss-covered or leaning  
+- **Tone:** Haunted, reverent, and quietly watchful
+
+---
+
+## 🕯️ History
+
+- Once a place of **healing pilgrimages**, anchored around the Cathedral of the Kindled Mercy  
+- Following **the ritual sacrifice of Elira** and the subsequent **flood**, many believe the town was cursed  
+- The bishop renamed himself Halric and declared the past purged—though older families still whisper “Ennius”
+
+---
+
+## 💀 What Lies Beneath
+
+- The original **cathedral crypts** stretch under the town’s oldest district  
+- A sealed reliquary gate still hums faintly behind the baker’s shop  
+- Spirits occasionally wander near the old aqueduct at night, praying or screaming in silence
+
+---
+
+## 🛑 Key Themes
+
+- **Memory vs Silence**  
+- **Faith twisted by fear**  
+- **A community that chose forgetting as its survival**  
+
+---
+
+## 🧭 Hooks for Players
+
+- The town **invites the party to investigate a haunting**, offering shelter and silence in exchange  
+- Someone dares to **speak Elira’s name** aloud for the first time in 20 years  
+- A child is born with a **spiral birthmark** matching the Kindled Mercy’s lost crest
+
+---
+
+## 📜 Read-Aloud Flavor (Arrival)
+
+> As your boots strike the worn stones of Vellbridge’s outer lane, fog curls between leaning cottages and bowed streetlamps.  
+>  
+> A bell rings once. Only once.  
+>  
+> You hear murmured prayers behind shuttered windows—and from somewhere unseen, the echo of water where no river flows.
+`;
+    document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>
